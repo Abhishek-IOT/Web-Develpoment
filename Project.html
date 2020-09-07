@@ -3,18 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Fitness</title>
-    <link rel="stylesheet" href="Abhi.css">
-    <style>
-        body{
-            padding: 0px;
-            margin: 0px;
-            background: url('fitness image.jpg');
-           
-        }
-    </style>
+    <title>Fitness Website</title>
 </head>
+<link rel="stylesheet" href="Abhi.css">
+<style>
+    body{
+        color: rgb(238, 116, 136);
+        margin:0px;
+        padding:0px;
+        background:url('fitness image.jpg') ;
+        height: 10px;
+
+    }
+    .left{
+        display: inline-block;
+       border: 2px solid red;
+       position:absolute;
+       left: 10px;
+       top :10px;
+    }
+    .mid{
+        display: block;
+        width: 20%;
+        margin:13px auto ;
+        border: 2px solid blue;
+    }
+    .right{
+        position: absolute;
+        right: 10px;
+        top:10px;
+        display: inline-block;
+        border: 2px solid green;
+    }
+</style>
 <body>
+<header class="head">
+    <div class="right">
+I am Right baby
+    </div>
+    <div class="left">
+<ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Fitness</a></li>
+    <li><a href="#">Coaching Centres</a></li>
+</ul>
+    </div>
+    <div class="mid">
+I am mid baby
+    </div>
+</header>
     
 </body>
 </html>
