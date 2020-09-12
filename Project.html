@@ -25,6 +25,10 @@
     .mid img{
         width: 200px;
         height: 200px;
+        
+    }
+    .mid div{
+        text-align:center;
     }
     .left{
         display: block;
@@ -44,13 +48,23 @@
         font-size: 20px;
     }
     .navbar li a:hover{
-        color:red;
+        color:rgb(243, 117, 117);
     }
+    .btn{
+        margin:0px 10px;
+        background-color:black ;
+        color:white;
+        padding: 10px 5px;
+        border:2px solid rgb(238, 152, 94) ;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
 </style>
 <body>
 <header class="head">
     <div class="right">
-I am Right baby
+<button class="btn">Contact Us</button><button class="btn">Email Us</button>
     </div>
     <div class="left">
 <ul class="navbar">
@@ -59,10 +73,12 @@ I am Right baby
     <li><a href="#">Coaching Centres</a></li>
 </ul>
     </div>
+
     <div class="mid">
 <img src="fitquote.jpg" alt="">
 <div>Abhishek Fitness</div>
-    </div>
+    
+</div>
 </header>
     
 </body>
