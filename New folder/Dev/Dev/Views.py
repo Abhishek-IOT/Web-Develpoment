@@ -3,6 +3,7 @@ from django.shortcuts import render
 
 
 def index(request):
+    print(request.GET.get('text','default'))
     return render(request,"Insert.html")
 
 
