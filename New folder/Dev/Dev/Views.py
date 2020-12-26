@@ -15,5 +15,7 @@ def Make(request):
 
 def analyze(request):
     djtext=request.GET.get('text','default')
+    removepunc = request.GET.get('removepunc', 'off')
+    print(removepunc)
     print(djtext)
-    return HttpResponse("Yo it is Abhishek Here")
+    return render(request,"analyze.html")
