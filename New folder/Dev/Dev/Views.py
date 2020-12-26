@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def index(request):
     print(request.GET.get('text','default'))
-    return render(request,"Insert.html")
+    return render(request,"Index2.html")
 
 
 def Make(request):
