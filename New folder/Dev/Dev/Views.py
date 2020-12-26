@@ -34,3 +34,12 @@ def analyze(request):
             temp = temp + char1.upper()
         params = {'purpose': 'To Upper Case', 'analyzetext': temp}
         return render(request,"analyze.html",params)
+    # elif removepunc=='on' and upper=='on':
+    #     for char in djtext:
+    #         if char not in punct:
+    #             anl = anl + char
+    #     temp = ""
+    #     for char1 in anl:
+    #         temp = temp + char1.upper()
+    #     params={'purpose':"Both the things done",'analyzetext':temp}
+    #     return render(request, "analyze.html", params)
