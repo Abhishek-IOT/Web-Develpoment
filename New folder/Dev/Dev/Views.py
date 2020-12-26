@@ -13,4 +13,7 @@ def Make(request):
     """
     return HttpResponse("Make<a href='/'>back</a>")
 
-
+def analyze(request):
+    djtext=request.GET.get('text','default')
+    print(djtext)
+    return HttpResponse("Yo it is Abhishek Here")
