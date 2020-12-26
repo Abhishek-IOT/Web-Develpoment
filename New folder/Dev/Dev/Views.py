@@ -14,8 +14,23 @@ def Make(request):
     return HttpResponse("Make<a href='/'>back</a>")
 
 def analyze(request):
+
     djtext=request.GET.get('text','default')
     removepunc = request.GET.get('removepunc', 'off')
+    upper=request.GET.get('upper','off')
     print(removepunc)
     print(djtext)
-    return render(request,"analyze.html")
+    anl=""
+    punct="""{}.()\<>"""
+    if removepunc=='on':
+        for char in djtext:
+            if char not in punct:
+                anl=anl+char
+        params={'purpose':'Remove Punctuations','analyzetext':anl}
+        return render(request, "analyze.html", params)
+    elif upper == 'on':
+        temp=""
+        for char1 in djtext:
+            temp = temp + char1.upper()
+        params = {'purpose': 'To Upper Case', 'analyzetext': temp}
+        return render(request,"analyze.html",params)
