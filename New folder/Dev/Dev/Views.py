@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    print(request.GET.get('text','default'))
+    print(request.POST.get('text','default'))
     return render(request,"Index2.html")
 
 
@@ -15,9 +15,9 @@ def Make(request):
 
 def analyze(request):
 
-    djtext=request.GET.get('text','default')
-    removepunc = request.GET.get('removepunc', 'off')
-    upper=request.GET.get('upper','off')
+    djtext=request.POST.get('text','default')
+    removepunc = request.POST.get('removepunc', 'off')
+    upper=request.POST.get('upper','off')
     print(removepunc)
     print(djtext)
     anl=""
