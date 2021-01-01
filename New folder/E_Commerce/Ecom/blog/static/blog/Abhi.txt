@@ -1,1 +1,4 @@
 This is my static file for My Blog Website
+ To Load any static file in django
+ {% load static %}
+    <a href="{%static 'blog/Abhi.txt' %}">Click Me</a>
