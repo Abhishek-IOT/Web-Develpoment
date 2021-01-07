@@ -6,7 +6,7 @@ from django.http import HttpResponse
 def index(request):
     return render(request,'Shop/index.html')
 def about(request):
-    pass
+    return render(request,'Shop/about.html')
 def Tracker(request):
     pass
 def Search(request):
